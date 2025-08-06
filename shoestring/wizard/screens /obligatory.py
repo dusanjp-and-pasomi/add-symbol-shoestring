@@ -105,7 +105,7 @@ def create(screens):
 		_('wizard-obligatory-destination-directory-label'),
 		is_directory_path,
 		_('wizard-obligatory-destination-directory-error-text'),
-		str(Path.cwd().absolute()))
+		str(Path.home().absolute() / 'symbol'))
 
 	ca_key_tab_list = TabList([
 		(0, _('wizard-obligatory-priv-ca')),
