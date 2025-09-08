@@ -317,6 +317,7 @@ In the wizard setup menu, the initial display for the installation directory fie
 2025_09_09
 ```
 commands/upgrade.py
-If initially set up with apiHttps = false and then run an upgrade with apiHttps = true, you will get an error saying "nginx.conf.erb is missing."
+If initially set up with apiHttps = false and then run an upgrade with apiHttps = true, 
+will get an error saying "nginx.conf.erb is missing."
 This has been fixed so that the error does not occur.
 ```
