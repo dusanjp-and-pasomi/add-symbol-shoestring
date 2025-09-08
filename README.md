@@ -118,7 +118,6 @@ init-all命令の新設に伴い、__main__.pyをこれに対応させた。
 2025_07_27
 ```
 commands/init_all.py
-
 shoestring.iniを生成した後
 すぐ使える記述に変更するかを聞いて、
 yの場合は、shoestring/shoestring.iniにすぐ使用出来る様に変更を加えます。
@@ -149,9 +148,15 @@ friendlyName = myShoestringNode
 2025_08_06
 ```
 wizard/screens/obligatory.py
-
 wizardの setupﾒﾆｭｰで、最初に表示される ｲﾝｽﾄｰﾙ先 ﾃﾞｨﾚｸﾄﾘ指定の欄の初期表示を、
 $HOME/symbolから、ｶﾚﾝﾄﾃﾞｨﾚｸﾄﾘに変更。
+```
+
+2025_09_09
+```
+commands/upgrade.py
+初回に apiHttps = false で setupした後に、apiHttps = true で upgradeを実行すると、「nginx.conf.erbが無い」ｴﾗｰが出る。
+これを ｴﾗｰが出ない様に修正。
 ```
 ----------------------------------------------------------------------------------------------
 2025_07_16
@@ -216,7 +221,7 @@ The following are the changes
 
 ③renew-certificates.py
 --config default value shoestring/shoestring.ini
---directory default value $(pwc)/node (must specify absolute path)
+--directory default value $(pwd)/node (must specify absolute path)
 --ca-key-path default value ca.key.pem
 --retain-node-key default value True (executes) whether retain-node-key is written or not
 *Planned to be fixed as soon as a fix is found for the issue where only absolute values can be written.
@@ -276,7 +281,6 @@ With the introduction of the new init-all command, __main__.py has been updated 
 2025_07_27
 ```
 commands/init_all.py
-
 After shoestring.ini is generated,
 you are asked whether you want to change it to a ready-to-use description.
 If you answer y, make changes to shoestring/shoestring.ini so that it can be used immediately.
@@ -307,6 +311,12 @@ The next command, setup, completes the basic dualnode.
 2025_08_06
 ```
 wizard/screens/obligatory.py
-
 In the wizard setup menu, the initial display for the installation directory field has been changed from $HOME/symbol to the current directory.
+```
+
+2025_09_09
+```
+commands/upgrade.py
+If initially set up with apiHttps = false and then run an upgrade with apiHttps = true, you will get an error saying "nginx.conf.erb is missing."
+This has been fixed so that the error does not occur.
 ```
