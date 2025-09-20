@@ -158,6 +158,12 @@ commands/upgrade.py
 初回に apiHttps = false で setupした後に、apiHttps = true で upgradeを実行すると、「nginx.conf.erbが無い」ｴﾗｰが出る。
 これを ｴﾗｰが出ない様に修正。
 ```
+
+2025_09_20
+```
+address命令（commands/address.py）を新設。
+nodeAccounts及び votingKeyを表示する。
+```
 ----------------------------------------------------------------------------------------------
 2025_07_16
 ```
@@ -320,4 +326,10 @@ commands/upgrade.py
 If initially set up with apiHttps = false and then run an upgrade with apiHttps = true, 
 will get an error saying "nginx.conf.erb is missing."
 This has been fixed so that the error does not occur.
+```
+
+2025_09_20
+```
+Added the address command (commands/address.py).
+Displays nodeAccounts and votingKeys.
 ```
