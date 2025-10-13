@@ -179,7 +179,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'node/keys/voting/privat
 internal/PeerDownloader.py
 nodewatchの /api/symbol/nodes/peerの表記方法に変更あり。
 各nodeの endpointを port3000/3001を分けて表記する変更あり。
-この変更後に、setup/upgradeした votingNodeでは、renew-voting-keyに失敗する。
+この変更後に、setup/upgradeした votingNodeでは、renew-voting-keysに失敗する。
 これに対応した。
 ```
 ----------------------------------------------------------------------------------------------
@@ -365,6 +365,6 @@ To address this error, we've modified the upgrade.py so that a voting directory 
 internal/PeerDownloader.py
 The notation for /api/symbol/nodes/peer in nodewatch has been changed.
 Each node's endpoint has been changed to be represented as separate ports 3000/3001.
-After this change, renew-voting-key failed on voting nodes that were set up or upgraded.
+After this change, renew-voting-keys failed on voting nodes that were set up or upgraded.
 This has been addressed.
 ```
