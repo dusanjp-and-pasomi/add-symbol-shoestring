@@ -181,6 +181,7 @@ nodewatchの /api/symbol/nodes/peerの表記方法に変更あり。
 各nodeの endpointを port3000/3001を分けて表記する変更あり。
 この変更後に、setup/upgradeした votingNodeでは、renew-voting-keysに失敗する。
 これに対応した。
+※2025_11_30 shoestring0.2.3にて対応して不要になった為、これを削除。
 ```
 ----------------------------------------------------------------------------------------------
 2025_07_16
@@ -367,4 +368,5 @@ The notation for /api/symbol/nodes/peer in nodewatch has been changed.
 Each node's endpoint has been changed to be represented as separate ports 3000/3001.
 After this change, renew-voting-keys failed on voting nodes that were set up or upgraded.
 This has been addressed.
+*2025_11_30 Deleted as it was no longer necessary as it was addressed in shoestring 0.2.3.
 ```
