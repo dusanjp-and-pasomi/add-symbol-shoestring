@@ -30,7 +30,7 @@ def parse_args(args):
 	register_subcommand(subparsers, 'setup', _('main-setup-help'))
 	register_subcommand(subparsers, 'signer', _('main-signer-help'))
 	register_subcommand(subparsers, 'upgrade', _('main-upgrade-help'))
-	register_subcommand(subparsers, 'init-all', _('main-init-help'))
+	register_subcommand(subparsers, 'init-all', _('main-init-all-help'))
 	register_subcommand(subparsers, 'address', _('main-address-help'))
 
 	args = parser.parse_args(args)
