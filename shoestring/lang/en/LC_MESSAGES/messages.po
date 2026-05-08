@@ -20,8 +20,8 @@ msgid "argument-help-announce-transaction-transaction"
 msgstr "file containing serialized transaction to send"
 
 #: shoestring/commands/min_cosignatures_count.py:35
-#: shoestring/commands/renew_certificates.py:36
-#: shoestring/commands/setup.py:146 shoestring/commands/signer.py:93
+#: shoestring/commands/renew_certificates.py:40
+#: shoestring/commands/setup.py:155 shoestring/commands/signer.py:93
 msgid "argument-help-ca-key-path"
 msgstr "path to main private key PEM file"
 
@@ -29,17 +29,17 @@ msgstr "path to main private key PEM file"
 #: shoestring/commands/health.py:74 shoestring/commands/import_bootstrap.py:49
 #: shoestring/commands/import_harvesters.py:97 shoestring/commands/init.py:29
 #: shoestring/commands/min_cosignatures_count.py:34
-#: shoestring/commands/renew_certificates.py:34
+#: shoestring/commands/renew_certificates.py:38
 #: shoestring/commands/renew_voting_keys.py:112
-#: shoestring/commands/reset_data.py:86 shoestring/commands/setup.py:138
+#: shoestring/commands/reset_data.py:86 shoestring/commands/setup.py:147
 #: shoestring/commands/signer.py:92
 msgid "argument-help-config"
 msgstr "path to shoestring configuration file"
 
 #: shoestring/commands/health.py:75
-#: shoestring/commands/renew_certificates.py:35
+#: shoestring/commands/renew_certificates.py:39
 #: shoestring/commands/renew_voting_keys.py:113
-#: shoestring/commands/reset_data.py:87 shoestring/commands/setup.py:140
+#: shoestring/commands/reset_data.py:87 shoestring/commands/setup.py:149
 msgid "argument-help-directory"
 msgstr "installation directory (default: {default_path})"
 
@@ -87,11 +87,31 @@ msgstr "input private key file (optional)"
 msgid "argument-help-pemtool-output"
 msgstr "output PEM key file"
 
-#: shoestring/commands/renew_certificates.py:37
+#: shoestring/commands/pemview.py:42
+msgid "argument-help-pemview-ask-pass"
+msgstr "show password prompt for accessing a password protected PEM"
+
+#: shoestring/commands/pemview.py:40
+msgid "argument-help-pemview-input"
+msgstr "input PEM file"
+
+#: shoestring/commands/pemview.py:41
+msgid "argument-help-pemview-network"
+msgstr "Symbol network name to use for generating address"
+
+#: shoestring/commands/pemview.py:43
+msgid "argument-help-pemview-show-private"
+msgstr "output private key to console too"
+
+#: shoestring/commands/renew_certificates.py:43
+msgid "argument-help-renew-certificates-force"
+msgstr "force overwrite of certificates"
+
+#: shoestring/commands/renew_certificates.py:41
 msgid "argument-help-renew-certificates-renew-ca"
 msgstr "renews CA certificate too"
 
-#: shoestring/commands/renew_certificates.py:38
+#: shoestring/commands/renew_certificates.py:42
 msgid "argument-help-renew-certificates-retain-node-key"
 msgstr "retain node key"
 
@@ -99,21 +119,25 @@ msgstr "retain node key"
 msgid "argument-help-reset-data-purge-harvesters"
 msgstr "purge harvesters.dat file"
 
-#: shoestring/commands/setup.py:141
+#: shoestring/commands/setup.py:156
+msgid "argument-help-setup-output-transaction-only"
+msgstr "only output linking transaction from a previous setup"
+
+#: shoestring/commands/setup.py:150
 msgid "argument-help-setup-overrides"
 msgstr "path to custom user settings"
 
-#: shoestring/commands/init.py:28 shoestring/commands/setup.py:139
+#: shoestring/commands/init.py:28 shoestring/commands/setup.py:148
 msgid "argument-help-setup-package"
 msgstr ""
 "Network configuration package. Possible values: (name | file:///filename "
 "| http(s)://uri) (default: mainnet)"
 
-#: shoestring/commands/setup.py:142
+#: shoestring/commands/setup.py:151
 msgid "argument-help-setup-rest-overrides"
 msgstr "path to custom user REST settings (this is only valid for API roles)"
 
-#: shoestring/commands/setup.py:145
+#: shoestring/commands/setup.py:154
 msgid "argument-help-setup-security"
 msgstr "security mode (default: default)"
 
@@ -145,7 +169,7 @@ msgstr "connecting to {endpoint}"
 
 #: shoestring/commands/init.py:17 shoestring/commands/reset_data.py:56
 #: shoestring/internal/Preparer.py:193
-#: shoestring/internal/VoterConfigurator.py:53
+#: shoestring/internal/VoterConfigurator.py:55
 msgid "general-copying-file"
 msgstr "copying FILE {source_path} into {destination_path}"
 
@@ -154,7 +178,7 @@ msgid "general-copying-tree"
 msgstr "copying TREE {source_path} to {destination_path}"
 
 #: shoestring/commands/renew_voting_keys.py:46
-#: shoestring/internal/Preparer.py:408
+#: shoestring/internal/Preparer.py:415
 msgid "general-created-aggregate-transaction"
 msgstr "created aggregate transaction with hash {transaction_hash}"
 
@@ -313,22 +337,26 @@ msgid "main-pemtool-help"
 msgstr "generates PEM files"
 
 #: shoestring/__main__.py:27
+msgid "main-pemview-help"
+msgstr "view a PEM file"
+
+#: shoestring/__main__.py:28
 msgid "main-renew-certificates-help"
 msgstr "renews certificates"
 
-#: shoestring/__main__.py:28
+#: shoestring/__main__.py:29
 msgid "main-renew-voting-keys-help"
 msgstr "renews voting keys"
 
-#: shoestring/__main__.py:29
+#: shoestring/__main__.py:30
 msgid "main-reset-data-help"
 msgstr "resets data to allow a resync from scratch"
 
-#: shoestring/__main__.py:30
+#: shoestring/__main__.py:31
 msgid "main-setup-help"
 msgstr "sets up a node"
 
-#: shoestring/__main__.py:31
+#: shoestring/__main__.py:32
 msgid "main-signer-help"
 msgstr "signs a transaction"
 
@@ -340,7 +368,7 @@ msgstr "valid subcommands"
 msgid "main-title"
 msgstr "Shoestring Tool"
 
-#: shoestring/__main__.py:32
+#: shoestring/__main__.py:33
 msgid "main-upgrade-help"
 msgstr "upgrades a node to the latest client version"
 
@@ -358,11 +386,11 @@ msgstr "detected current finalization epoch as {epoch}"
 msgid "nodewatch-client-detected-height"
 msgstr "detected last finalized height as {height}"
 
-#: shoestring/internal/PeerDownloader.py:64
+#: shoestring/internal/PeerDownloader.py:79
 msgid "peer-downloader-loading-api-endpoints"
 msgstr "loading api endpoints from {filepath}'"
 
-#: shoestring/internal/PeerDownloader.py:20
+#: shoestring/internal/PeerDownloader.py:34
 msgid "peer-downloader-saved-file"
 msgstr "saved peers file {filepath}"
 
@@ -385,6 +413,30 @@ msgstr "Provided passwords do not match"
 #: shoestring/commands/pemtool.py:43
 msgid "pemtool-saved-pem-file"
 msgstr "saved {filepath}"
+
+#: shoestring/commands/pemview.py:17
+msgid "pemview-error-input-file-does-not-exist"
+msgstr "input file ({filepath}) does not exist"
+
+#: shoestring/commands/pemview.py:14
+msgid "pemview-error-input-file-unexpected-suffix"
+msgstr "input file ({filepath}) does not have .pem extension"
+
+#: shoestring/commands/pemview.py:26
+msgid "pemview-loaded-pem-file"
+msgstr "loaded {filepath}"
+
+#: shoestring/commands/pemview.py:32
+msgid "pemview-show-address"
+msgstr "    address: {address}"
+
+#: shoestring/commands/pemview.py:36
+msgid "pemview-show-private-key"
+msgstr "private key: {private_key}"
+
+#: shoestring/commands/pemview.py:33
+msgid "pemview-show-public-key"
+msgstr " public key: {public_key}"
 
 #: shoestring/commands/renew_voting_keys.py:89
 msgid "renew-voting-keys-maximum-already-registered"
@@ -412,11 +464,15 @@ msgstr ""
 "no transaction has been generated because account is already properly "
 "configured"
 
-#: shoestring/commands/setup.py:84
+#: shoestring/commands/setup.py:93
 msgid "setup-resources-directory-exists"
 msgstr ""
 "setup failed because resources directory {directory} already exists, did "
 "you intend to run upgrade?"
+
+#: shoestring/commands/setup.py:82
+msgid "setup-status-output-transaction-only"
+msgstr "generating linking transaction from previous setup..."
 
 #: shoestring/commands/signer.py:32
 msgid "signer-aggregate-transaction"
