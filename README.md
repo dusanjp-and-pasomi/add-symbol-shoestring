@@ -183,6 +183,16 @@ nodewatchの /api/symbol/nodes/peerの表記方法に変更あり。
 これに対応した。
 ※2025_11_30 shoestring0.2.3にて対応して不要になった為、これを削除。
 ```
+2026_05_08
+```
+shoestring0.2.4対応
+__main__.py
+commands/setup.py
+commands/renew-certificates.py
+commands/renew-voting-keys
+lang/en/LC_MESSAGES
+lang/ja/LC_MESSAGES
+```
 ----------------------------------------------------------------------------------------------
 2025_07_16
 ```
@@ -370,3 +380,13 @@ After this change, renew-voting-keys failed on voting nodes that were set up or 
 This has been addressed.
 *2025_11_30 Deleted as it was no longer necessary as it was addressed in shoestring 0.2.3.
 ```
+2026_05_08
+````
+Compatible with shoestring0.2.4
+__main__.py
+commands/setup.py
+commands/renew-certificates.py
+commands/renew-voting-keys
+lang/en/LC_MESSAGES
+lang/ja/LC_MESSAGES
+````
